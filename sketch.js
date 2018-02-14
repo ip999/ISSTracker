@@ -12,9 +12,7 @@ var interval = setInterval(iss_update, 5000);
 
 function preload() {
   // The clon and clat in this url are edited to be in the correct order.
-  mapimg = loadImage('https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/' +
-    clon + ',' + clat + ',' + zoom + '/' + ww + 'x' + hh +
-    '?access_token=pk.eyJ1IjoiaXA5IiwiYSI6ImNqZGZ5aHJkZzBhaXAyeHBpdHF0NjVnczMifQ.wtEhgCIiP_ttvOqCYHb6ng');
+
 
     loadJSON("http://api.open-notify.org/iss-now.json", gotISSData, 'jsonp');
   }
